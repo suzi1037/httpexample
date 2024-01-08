@@ -74,11 +74,11 @@ func main() {
 		Content: conf.Content,
 	}
 
-	sockerAddr := fmt.Sprintf("%s:%d", conf.Ip, conf.Port)
-	log.Println("start server", sockerAddr)
+	socketAddr := fmt.Sprintf("%s:%d", conf.Ip, conf.Port)
+	log.Println("start server", socketAddr)
 
 	server := http.Server{
-		Addr:    sockerAddr,
+		Addr:    socketAddr,
 		Handler: handler,
 	}
 
