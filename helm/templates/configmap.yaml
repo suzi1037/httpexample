@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: simpleconf
+data:
+  xx.yaml: |-
+    ip: {{.Values.runCfg.ip}}
+    port: {{.Values.service.port}}
+    content: {{.Values.runCfg.content}}
+    timeout: {{.Values.runCfg.timeout}}
+{{/*  from-file: |-*/}}
+{{/*    {{ .Files.Get (printf "../haha" ) | indent 4 }}*/}}
