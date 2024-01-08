@@ -1,0 +1,9 @@
+每次需要手动修改
+    Makefile里的VERSION
+    helm/Chart.yaml的appVersion
+    how to？
+
+localhost:5001/httpserver
+    多处需要一样配置
+        Makefile
+        helm/Values.yaml
